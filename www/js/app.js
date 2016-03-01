@@ -24,7 +24,19 @@ angular.module('starter', ['ionic'])
 })
 .controller('ListController', ['$sce', '$scope', '$http', function($sce, $scope, $http){
   $http.get('js/videos.json').success(function(data){
+    //connect data to videos variable
     $scope.videos = data;
+
+    // delete item connect to click event
+    $scope.deleteItem =function(item) {
+      $scope.videos.splice($scope.videos.indexOf(item), 1);
+    }
+
+    $scope.toggleStar = function(item){
+      item.star = !item.star;
+    }
+
+    // move item connect to click event
     $scope.moveItem = function(item, fromIndex, toIndex){
       $scope.videos.splice(fromIndex, 1);
       $scope.videos.splice(toIndex, 0, item);
