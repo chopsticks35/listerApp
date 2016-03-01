@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane>
+      <ion-header-bar class="bar-positive">
+        <h2 class="title">Video List</h2>
+      </ion-header-bar>
+      <div class="bar bar-subheader item-input-inset bar-light">
+        <label class="item-input-wrapper">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="search" placeholder="Search Library">
+        </label>
+      </div>
+      <ion-content class="has-subheader">
+        <ion-list>
+          <ion-item class="item-thumbnail-left item-text-wrap">
+            <img src="img/logo.jpg" alt="image">
+            <h2>Lunge Salutations</h2>
+            <h3>A quick look at lunging sun salutations to awaken your hips and spine.  A great way to warm up your body and stretch if you're very short on time.  Two blocks are reccommended but not required.  You can also use a blanket or thin cushion if you have tender knees when lowering your back leg in lunged.  Props Suggested: Two blocks.</h3>
+          </ion-item>
+        </ion-list>
+
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>
