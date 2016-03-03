@@ -1,0 +1,102 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'cordova',
+1 verbose cli   'ionic' ]
+2 info using npm@3.3.12
+3 info using node@v5.2.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData cordova
+8 silly fetchPackageMetaData ionic
+9 silly fetchNamedPackageData cordova
+10 silly mapToRegistry name cordova
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/cordova
+14 silly fetchOtherPackageData ionic
+15 silly cache add args [ 'ionic', null ]
+16 verbose cache add spec ionic
+17 verbose request uri https://registry.npmjs.org/cordova
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 4:00:38 PM
+20 verbose request id eed6cf5bc5de9395
+21 http request GET https://registry.npmjs.org/cordova
+22 silly cache add parsed spec Result {
+22 silly cache add   raw: 'ionic',
+22 silly cache add   scope: null,
+22 silly cache add   name: null,
+22 silly cache add   rawSpec: 'ionic',
+22 silly cache add   spec: '/Users/chopsticks35/Desktop/listerApp/ionic',
+22 silly cache add   type: 'local' }
+23 silly addLocalTarball shasum (computed) da39a3ee5e6b4b0d3255bfef95601890afd80709
+24 verbose addTmpTarball /Users/chopsticks35/Desktop/listerApp/ionic not in flight; adding
+25 verbose addTmpTarball validating metadata from /Users/chopsticks35/Desktop/listerApp/ionic
+26 verbose tar unpack /Users/chopsticks35/Desktop/listerApp/ionic
+27 verbose tar unpacking to /tmp/npm-17814-d017947b/unpack-b26a7ce8cee7119db0c70488062fbb0d
+28 silly gentlyRm /tmp/npm-17814-d017947b/unpack-b26a7ce8cee7119db0c70488062fbb0d is being purged
+29 verbose gentlyRm don't care about contents; nuking /tmp/npm-17814-d017947b/unpack-b26a7ce8cee7119db0c70488062fbb0d
+30 silly gunzTarPerm modes [ '755', '644' ]
+31 error tar.unpack error reading /Users/chopsticks35/Desktop/listerApp/ionic
+32 error addLocal Could not install /Users/chopsticks35/Desktop/listerApp/ionic
+33 silly fetchPackageMetaData Error: 0-byte tarball
+33 silly fetchPackageMetaData Please run `npm cache clean`
+33 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/lib/utils/tar.js:262:14
+33 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:83:15)
+33 silly fetchPackageMetaData  error for ionic [Error: 0-byte tarball
+33 silly fetchPackageMetaData Please run `npm cache clean`]
+34 http 200 https://registry.npmjs.org/cordova
+35 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+35 verbose headers   etag: '"48R6DSFIP6WHSV567A2J0MCJA"',
+35 verbose headers   'content-type': 'application/json',
+35 verbose headers   'cache-control': 'max-age=300',
+35 verbose headers   'content-length': '376526',
+35 verbose headers   'accept-ranges': 'bytes',
+35 verbose headers   date: 'Wed, 02 Mar 2016 23:00:38 GMT',
+35 verbose headers   via: '1.1 varnish',
+35 verbose headers   age: '5',
+35 verbose headers   connection: 'keep-alive',
+35 verbose headers   'x-served-by': 'cache-sjc3135-SJC',
+35 verbose headers   'x-cache': 'HIT',
+35 verbose headers   'x-cache-hits': '1',
+35 verbose headers   'x-timer': 'S1456959638.312610,VS0,VE0',
+35 verbose headers   vary: 'Accept' }
+36 silly get cb [ 200,
+36 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+36 silly get     etag: '"48R6DSFIP6WHSV567A2J0MCJA"',
+36 silly get     'content-type': 'application/json',
+36 silly get     'cache-control': 'max-age=300',
+36 silly get     'content-length': '376526',
+36 silly get     'accept-ranges': 'bytes',
+36 silly get     date: 'Wed, 02 Mar 2016 23:00:38 GMT',
+36 silly get     via: '1.1 varnish',
+36 silly get     age: '5',
+36 silly get     connection: 'keep-alive',
+36 silly get     'x-served-by': 'cache-sjc3135-SJC',
+36 silly get     'x-cache': 'HIT',
+36 silly get     'x-cache-hits': '1',
+36 silly get     'x-timer': 'S1456959638.312610,VS0,VE0',
+36 silly get     vary: 'Accept' } ]
+37 verbose get saving cordova to /Users/chopsticks35/.npm/registry.npmjs.org/cordova/.cache.json
+38 silly rollbackFailedOptional Starting
+39 silly rollbackFailedOptional Finishing
+40 silly runTopLevelLifecycles Starting
+41 silly runTopLevelLifecycles Finishing
+42 silly install printInstalled
+43 verbose stack Error: 0-byte tarball
+43 verbose stack Please run `npm cache clean`
+43 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/tar.js:262:14
+43 verbose stack     at FSReqWrap.oncomplete (fs.js:83:15)
+44 verbose cwd /Users/chopsticks35/Desktop/listerApp
+45 error Darwin 15.3.0
+46 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "cordova" "ionic"
+47 error node v5.2.0
+48 error npm  v3.3.12
+49 error 0-byte tarball
+49 error Please run `npm cache clean`
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

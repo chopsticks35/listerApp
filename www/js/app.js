@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 angular.module('starter', ['ionic'])
 
-.run(function($ionicPlatform) {
+  .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     if(window.cordova && window.cordova.plugins.Keyboard) {
       // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -22,26 +22,26 @@ angular.module('starter', ['ionic'])
     }
   });
 })
-.controller('ListController', ['$sce', '$scope', '$http', function($sce, $scope, $http){
-  $http.get('js/videos.json').success(function(data){
-    //connect data to videos variable
-    $scope.videos = data;
+  .controller('ListController', ['$sce', '$scope', '$http', function($sce, $scope, $http){
+    $http.get('js/videos.json').success(function(data){
+      //connect data to videos variable
+      $scope.videos = data;
 
-    // delete item connect to click event
-    $scope.deleteItem =function(item) {
-      $scope.videos.splice($scope.videos.indexOf(item), 1);
-    }
+      // delete item connect to click event
+      $scope.deleteItem =function(item) {
+        $scope.videos.splice($scope.videos.indexOf(item), 1);
+      }
 
-    $scope.toggleStar = function(item){
-      item.star = !item.star;
-    }
+      $scope.toggleStar = function(item){
+        item.star = !item.star;
+      }
 
-    // move item connect to click event
-    $scope.moveItem = function(item, fromIndex, toIndex){
-      $scope.videos.splice(fromIndex, 1);
-      $scope.videos.splice(toIndex, 0, item);
-    }
-  });
+      // move item connect to click event
+      $scope.moveItem = function(item, fromIndex, toIndex){
+        $scope.videos.splice(fromIndex, 1);
+        $scope.videos.splice(toIndex, 0, item);
+      }
+    });
 
-  $scope.$sce = $sce;
-}]);
+    $scope.$sce = $sce;
+  }]);
