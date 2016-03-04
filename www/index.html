@@ -41,7 +41,8 @@
         <ion-list show-delete="data.showDelete" show-reorder="data.showReorder">
           <ion-item ng-class="{&apos;star&apos;:item.star}" ng-repeat="item in videos | filter: query" class="item-thumbnail-left item-icon-right item-text-wrap">
 
-            <img ng-src="img/{{item.pic}}.jpg" alt="{{item.title}} Pic">
+<!--            PICS    -->
+<!--            <img ng-src="img/{{item.pic}}.jpg" alt="{{item.title}} Pic">-->
             <!--WRONG!!   <source src="img/{{item.pic}}.m4v" type="video/m4v">-->
 
             <!-- $sce works, but going to serve off vimeo instead
@@ -50,11 +51,10 @@
 </video>
 -->
 
-        THIS WORKS BUT NEED TO BUILD MODAL POP UP TO SERVE VIDEOS
-
-            <p>{{item.vimeoId}}</p>
-            <iframe ng-src="{{$sce.trustAsResourceUrl(&apos;https://player.vimeo.com/video/&apos; + item.vimeoId)}}" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/157349623">buddha</a> from <a href="https://vimeo.com/user49530969">Ti Wegmeyer</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<!--        THIS WORKS BUT NEED TO BUILD MODAL POP UP TO SERVE VIDEOS-->
+<!--        TEST:     <p>{{item.vimeoId}}</p>-->
+            <iframe ng-src="{{$sce.trustAsResourceUrl(&apos;https://player.vimeo.com/video/&apos; + item.vimeoId)}}" width="150" height="100" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/157349623"></a><a href="https://vimeo.com/user49530969"></a><a href="https://vimeo.com"></a></p>
 
 
 <!--
