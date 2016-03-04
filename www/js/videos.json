@@ -1,6 +1,7 @@
 [{
   "title": "Lunge Salutations",
   "pic": "buddha",
+  "vimeoId": "157349623",
   "level": "2",
   "type": "body",
   "style": "Vinyasa Flow",
@@ -12,6 +13,7 @@
   {
   "title": "Computer Work Break",
   "pic": "calm",
+  "vimeoId": "157653565",
   "level": "2",
   "type": "body",
   "style": "Hatha",
@@ -23,6 +25,7 @@
  {
    "title": "Instant Reset",
    "pic": "clay",
+   "vimeoId": "157664481",
    "level": "2",
    "type": "body",
    "style": "Hatha",
@@ -34,6 +37,7 @@
  {
    "title": "Recenter Yourself",
    "pic": "door",
+   "vimeoId": "157664983",
    "level": "1",
    "type": "heart",
    "style": "Meditation",
@@ -45,6 +49,7 @@
  {
    "title": "Power Mantra",
    "pic": "heart",
+   "vimeoId": "157665321",
    "level": "1",
    "type": "mind",
    "style": "Meditation",
@@ -56,6 +61,7 @@
  {
    "title": "Wrist Free Anytime Flow",
    "pic": "life",
+   "vimeoId": "",
    "level": "2",
    "type": "body",
    "style": "Vinyasa Flow",
@@ -67,6 +73,7 @@
  {
    "title": "Yin for Fear of Change",
    "pic": "logo",
+   "vimeoId": "",
    "level": "2",
    "type": "heart",
    "style": "Yin",
@@ -78,6 +85,7 @@
  {
    "title": "Beginner Class",
    "pic": "mermaid",
+   "vimeoId": "",
    "level": "1",
    "type": "mind",
    "style": "Vinyasa Flow",
@@ -89,6 +97,7 @@
  {
    "title": "Unravel Travel Tension",
    "pic": "osho",
+   "vimeoId": "",
    "level": "1",
    "type": "body",
    "style": "Hatha",
@@ -100,6 +109,7 @@
  {
    "title": "Yoga Nidra for a Sweet Release",
    "pic": "studio",
+   "vimeoId": "",
    "level": "1",
    "type": "mind",
    "style": "Meditation",
@@ -111,6 +121,7 @@
  {
    "title": "Go Get Em Flow",
    "pic": "velocity",
+   "vimeoId": "",
    "level": "3",
    "type": "body",
    "style": "Vinyasa Flow",
@@ -122,6 +133,7 @@
  {
    "title": "The One Pose for Digestion",
    "pic": "wish",
+   "vimeoId": "",
    "level": "1",
    "type": "body",
    "style": "Hatha",

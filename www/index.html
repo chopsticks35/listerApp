@@ -44,14 +44,22 @@
             <img ng-src="img/{{item.pic}}.jpg" alt="{{item.title}} Pic">
             <!--WRONG!!   <source src="img/{{item.pic}}.m4v" type="video/m4v">-->
 
-            <!--
+            <!-- $sce works, but going to serve off vimeo instead
 <video width="200" height="100" controls>
-<source src="{{$sec.trustAsResourceUrl('img/' + item.pic + m4v)}}" type="video/m4v">
+<source src="{{$sce.trustAsResourceUrl('img/' + item.pic + m4v)}}" type="video/m4v">
 </video>
 -->
-            <!--
-<iframe src="https://player.vimeo.com/video/157349623" width="vw" height="vh" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+        THIS WORKS BUT NEED TO BUILD MODAL POP UP TO SERVE VIDEOS
+
+            <p>{{item.vimeoId}}</p>
+            <iframe ng-src="{{$sce.trustAsResourceUrl(&apos;https://player.vimeo.com/video/&apos; + item.vimeoId)}}" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe>
 <p><a href="https://vimeo.com/157349623">buddha</a> from <a href="https://vimeo.com/user49530969">Ti Wegmeyer</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+
+<!--
+<iframe src="https://player.vimeo.com/video/157653565" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p>on from <a href="https://vimeo.com/user49530969">Ti Wegmeyer</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 -->
 
             <h2>{{item.title}}</h2>
