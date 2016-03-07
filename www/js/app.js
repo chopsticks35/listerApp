@@ -23,26 +23,44 @@ angular.module('starter', ['ionic'])
   });
 })
 
-.config(function($stateProvider, $urlRouteProvider){
-  $stateProvider
-    .state('tabs', {
-      url: '/tab',
-      abstract: true,
-      templateUrl: 'templates/tabs.html'
-    })
-    .state('tabs.list')
+//.config(function($stateProvider, $urlRouteProvider){
+//  $stateProvider
+//  template called tabs: go get it at this url, but not real page to navigate - abstract true, but rather be a parent template
+//    .state('tabs', {
+//      url: '/tab',
+//      abstract: true,
+//      templateUrl: 'templates/tabs.html'
+//    })
+//  subtemplate/child of tabs - this one load up a view that has template and controller
+//    .state('tabs.list', {
+//      url: '/list',
+//      views: {
+//        'list-tab': {
+//          templateUrl: 'templates/list.html',
+//          controller: 'ListController'
+//        }
+//      }
+//    })
+//  default routing back to tab list - will load tabs and list navigation
+//  $urlRouterProvider.otherwise('/tab/list');
+//})
 
-})
-
-
+//list controller
   .controller('ListController', ['$sce', '$scope', '$http', function($sce, $scope, $http){
     $http.get('js/videos.json').success(function(data){
       //connect data to videos variable
       $scope.videos = data;
 
       // delete item connect to click event
-      $scope.deleteItem =function(item) {
+      $scope.deleteItem = function(item) {
         $scope.videos.splice($scope.videos.indexOf(item), 1);
+      }
+
+      $scope.refreshList = function() {
+        $http.get('js/videos.json').success(function(data) {
+          $scope.videos = data;
+          $scope.$broadcast('scroll.refreshComplete');
+        });
       }
 
       $scope.toggleStar = function(item){
