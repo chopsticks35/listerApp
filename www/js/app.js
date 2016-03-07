@@ -22,6 +22,19 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+
+.config(function($stateProvider, $urlRouteProvider){
+  $stateProvider
+    .state('tabs', {
+      url: '/tab',
+      abstract: true,
+      templateUrl: 'templates/tabs.html'
+    })
+    .state('tabs.list')
+
+})
+
+
   .controller('ListController', ['$sce', '$scope', '$http', function($sce, $scope, $http){
     $http.get('js/videos.json').success(function(data){
       //connect data to videos variable
